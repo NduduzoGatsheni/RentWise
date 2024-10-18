@@ -1,0 +1,230 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RoomRent Pro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #F4F4F4;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .container {
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1A365D;
+            color: #FAFAFA;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: #FAFAFA;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+            .nav-links a:hover {
+                color: #2A9D8F;
+            }
+
+        .hero {
+            background-image: url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FAFAFA;
+            position: relative;
+        }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(26, 54, 93, 0.7);
+            }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #2A9D8F;
+            color: #FAFAFA;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+            .cta-button:hover {
+                background-color: #1e7d71;
+            }
+
+        .features {
+            padding: 80px 0;
+            background-color: #FAFAFA;
+        }
+
+            .features h2 {
+                text-align: center;
+                margin-bottom: 40px;
+                color: #1A365D;
+            }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+            .feature-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .feature-card h3 {
+                color: #1A365D;
+                margin-bottom: 15px;
+            }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #2A9D8F;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #1A365D;
+            color: #FAFAFA;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">RoomRent Pro</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#login" class="cta-button">Log In</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Streamline Your Room Rentals</h1>
+            <p>Efficient management for property owners and a seamless experience for tenants.</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Gain insights into your rental performance with advanced analytics tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Easy Scheduling</h3>
+                    <p>Simplify booking and manage your calendar effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Secure Payments</h3>
+                    <p>Process payments safely and keep track of your finances.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Manage your properties on-the-go with our responsive design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RoomRent Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from("h1", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+        gsap.from(".hero p", { opacity: 0, y: 20, duration: 1, delay: 0.7 });
+        gsap.from(".hero .cta-button", { opacity: 0, y: 20, duration: 1, delay: 0.9 });
+    </script>
+</body>
+</html>

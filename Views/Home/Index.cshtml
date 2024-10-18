@@ -2,31 +2,112 @@
     ViewData["Title"] = "Home Page";
 }
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Job Portal</title>
-    <link rel="stylesheet" href="~/Content/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Welcome to RoomEase</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            background: linear-gradient(to bottom, #1f4037, #99f2c8);
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #1f4037;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+            .cta-button:hover {
+                background-color: #1f4037;
+                color: #fff;
+                transform: translateY(-3px);
+            }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .feature {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 10px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+            .feature:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            }
+
+            .feature h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            .feature p {
+                font-size: 0.9rem;
+            }
+    </style>
 </head>
 <body>
-  
-
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Your Dream Job Portal</h1>
-                <p>Find the best jobs, internships, and freelance opportunities with us.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn-primary">Browse Jobs</a>
-                    <a href="#" class="btn-secondary">Create an Account</a>
-                </div>
+    <div class="container">
+        <h1>Welcome to RoomEase</h1>
+        <p>Simplify your room rental management with our intuitive and powerful system. Streamline bookings, manage properties, and boost your efficiency.</p>
+        <a href="#" class="cta-button">Get Started</a>
+        <div class="features">
+            <div class="feature">
+                <h3>Easy Booking</h3>
+                <p>Seamless reservation process for your clients.</p>
             </div>
-        </section>
-
-   
+            <div class="feature">
+                <h3>Property Overview</h3>
+                <p>Manage all your properties from one dashboard.</p>
+            </div>
+            <div class="feature">
+                <h3>Financial Insights</h3>
+                <p>Track revenue and analyze performance easily.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
-

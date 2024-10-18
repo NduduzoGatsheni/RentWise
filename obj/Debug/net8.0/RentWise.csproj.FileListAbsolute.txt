@@ -28,3 +28,4 @@ C:\Users\nduva\OneDrive\Desktop\c#\RentWise\obj\Debug\net8.0\refint\RentWise.dll
 C:\Users\nduva\OneDrive\Desktop\c#\RentWise\obj\Debug\net8.0\RentWise.pdb
 C:\Users\nduva\OneDrive\Desktop\c#\RentWise\obj\Debug\net8.0\RentWise.genruntimeconfig.cache
 C:\Users\nduva\OneDrive\Desktop\c#\RentWise\obj\Debug\net8.0\ref\RentWise.dll
+C:\Users\nduva\OneDrive\Desktop\c#\RentWise\obj\Debug\net8.0\RentWise.sourcelink.json
